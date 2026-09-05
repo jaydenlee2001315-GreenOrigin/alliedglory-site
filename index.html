@@ -49,7 +49,7 @@
   nav.links a{transition:color .2s; margin-right:34px;}
   nav.links a:last-child{margin-right:0;}
   nav.links a:hover{color:var(--leaf-deep);}
-  .cta-btn{background:var(--leaf-deep); color:var(--field); padding:11px 20px; font-size:12.5px; font-weight:600; transition:background .2s;}
+  .cta-btn{display:inline-block; background:var(--leaf-deep); color:var(--field); padding:11px 20px; font-size:12.5px; font-weight:600; transition:background .2s;}
   .cta-btn:hover{background:var(--soil);}
   .navToggle{display:none; flex-direction:column; gap:5px; cursor:pointer;}
   .navToggle span{width:22px; height:1.5px; background:var(--soil);}
@@ -64,7 +64,7 @@
   .hero-zh{font-family:'Noto Serif SC',var(--serif); font-weight:700; font-size:19px; color:var(--soil-soft); margin-top:16px;}
   .hero p{margin-top:24px; max-width:460px; color:var(--soil-soft); font-size:15.5px; line-height:1.72;}
   .hero-cta{margin-top:34px; display:flex; gap:18px; align-items:center; font-size:13px; flex-wrap:wrap;}
-  .hero-cta .btn{background:var(--leaf-deep); color:var(--field); padding:13px 24px; font-weight:600;}
+  .hero-cta .btn{display:inline-block; background:var(--leaf-deep); color:var(--field); padding:13px 24px; font-weight:600;}
   .hero-cta .btn:hover{background:var(--soil);}
   .hero-cta .link{color:var(--soil-soft); border-bottom:1px solid var(--hairline-leaf); padding-bottom:2px;}
   .hero-img{position:relative;}
@@ -176,7 +176,7 @@
 <section class="hero">
   <div class="grid">
     <div class="hero-copy">
-      <p class="label">Allied Glory Technology Limited · 匯朗科技有限公司</p>
+      <p class="label"><span style="white-space:nowrap;">Allied Glory Technology Limited</span> · <span style="white-space:nowrap;">匯朗科技有限公司</span></p>
       <h1>From Soil to Shelf,<br><em>Built as One System</em></h1>
       <p class="hero-zh">从田间到货架，一体贯通</p>
       <p>We grow, nourish, and deliver — connecting cultivation know-how, crop nutrition, and premium finished goods across Southeast Asia, the Pacific, and beyond.</p>
@@ -281,7 +281,7 @@
           <svg class="mark" viewBox="0 0 40 40" fill="none"><path d="M20 4C11 4 5 12 5 22c0 7 5 12 12 13-1-9 2-17 8-22 3.5-2.8 7.5-4 11-4C33 6 27 4 20 4Z" fill="#5C7A45"/></svg>
           <span class="name">ALLIED GLORY</span>
         </div>
-        <p>Allied Glory Technology Limited · 匯朗科技有限公司<br>Unit 608, Wing On House, Hong Kong</p>
+        <p>Allied Glory Technology Limited<br><span style="white-space:nowrap;">匯朗科技有限公司</span><br>Unit 608, Wing On House, Hong Kong</p>
       </div>
       <div class="foot-links">
         <h4>Farm to Shelf</h4>
