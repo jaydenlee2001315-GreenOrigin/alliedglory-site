@@ -3,6 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rivera Cigars — third-generation handmade Nicaraguan cigars from Estelí. Wholesale for Greater China &amp; Southeast Asia via Allied Glory, Hong Kong. Private label on order.">
+<link rel="canonical" href="https://alliedglory.com.hk/cigars.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rivera Cigars — Allied Glory Technology Limited">
+<meta property="og:description" content="Third-generation handmade Nicaraguan cigars from Estelí. Wholesale for Greater China &amp; Southeast Asia. Private label on order.">
+<meta property="og:url" content="https://alliedglory.com.hk/cigars.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rivera Cigars — Allied Glory Technology Limited">
+<meta name="twitter:description" content="Third-generation handmade Nicaraguan cigars from Estelí. Wholesale for Greater China &amp; Southeast Asia. Private label on order.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Allied Glory Technology Limited","url":"https://alliedglory.com.hk","email":"info@alliedglory.com.hk","telephone":"+852 6743 5383","address":{"@type":"PostalAddress","streetAddress":"Unit 608, 6/F Wing On House, 71 Des Voeux Road Central","addressLocality":"Hong Kong"}}
+</script>
 <title>Rivera Cigars — Allied Glory Technology Limited</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -331,6 +343,56 @@
     .section-head p{max-width:100%;}
     .specs-note .big{font-size:44px;}
   }
+
+  /* ---------- wholesale inquiry form (added) ---------- */
+  .inquiry{background:var(--panel); border-top:1px solid var(--hairline); padding:80px 0 90px;}
+  .inquiry .wrap{max-width:880px;}
+  .inquiry .section-head{display:flex; flex-direction:column; gap:14px; margin-bottom:36px;}
+  .inquiry h2.h2{font-family:var(--serif); font-weight:600; font-size:32px; line-height:1.15; color:var(--parchment);}
+  .inquiry .lead{color:var(--stone); font-size:14.5px; max-width:62ch;}
+  .inquiry .lead b{color:var(--gold-bright); font-weight:600;}
+  .inq-form{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 22px;}
+  .inq-field{display:flex; flex-direction:column; gap:8px; min-width:0;}
+  .inq-field.col2{grid-column:1 / -1;}
+  .inq-field label{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); font-weight:600;}
+  .inq-field label .req{color:var(--oxblood); margin-left:4px;}
+  .inq-field input[type="text"], .inq-field input[type="email"], .inq-field input[type="tel"],
+  .inq-field select, .inq-field textarea{
+    background:var(--ink); border:1px solid var(--hairline); color:var(--parchment);
+    padding:12px 14px; font:inherit; font-size:14px; border-radius:2px; width:100%;
+    transition:border-color .2s;
+  }
+  .inq-field input:focus, .inq-field select:focus, .inq-field textarea:focus{outline:none; border-color:var(--gold);}
+  .inq-field textarea{min-height:96px; resize:vertical;}
+  .inq-field select{appearance:none; -webkit-appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%23C6A552' stroke-width='1.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat:no-repeat; background-position:right 14px center; padding-right:36px;}
+  .inq-field .hint{font-size:11.5px; color:var(--stone); line-height:1.5;}
+  .inq-field .hint b{color:var(--gold-bright); font-weight:600;}
+  .inq-check{display:flex; align-items:flex-start; gap:10px; font-size:12.5px; color:var(--stone); line-height:1.55;}
+  .inq-check input{margin-top:3px; accent-color:var(--gold); flex-shrink:0;}
+  .inq-check label{letter-spacing:0; text-transform:none; font-size:12.5px; font-weight:400; color:var(--stone);}
+  .inq-check .zh-lbl{display:block; color:var(--parchment); margin-top:2px; font-size:12px;}
+  .inq-actions{grid-column:1 / -1; display:flex; align-items:center; gap:18px; flex-wrap:wrap; margin-top:6px;}
+  .inq-submit{
+    display:inline-block; background:var(--gold); color:#1a1408; padding:14px 30px;
+    font-family:var(--sans); font-weight:600; font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    border:1px solid var(--gold); border-radius:2px; cursor:pointer;
+    transition:background .2s, color .2s;
+  }
+  .inq-submit:hover{background:var(--gold-bright); color:#1a1408;}
+  .inq-submit[disabled]{opacity:.5; cursor:wait;}
+  .inq-note{font-size:11.5px; color:var(--stone); letter-spacing:.04em;}
+  .inq-note b{color:var(--gold-bright); font-weight:600;}
+  .inq-status{grid-column:1 / -1; display:none; padding:12px 14px; border:1px solid var(--hairline);
+    background:var(--panel-2); color:var(--parchment); font-size:13px; line-height:1.55; border-radius:2px;}
+  .inq-status.ok{display:block; border-color:var(--gold);}
+  .inq-status.ok b{color:var(--gold-bright);}
+  @media (max-width:640px){
+    .inquiry{padding:56px 0 64px;}
+    .inquiry h2.h2{font-size:26px;}
+    .inq-form{grid-template-columns:1fr; gap:14px;}
+  }
 </style>
 </head>
 <body>
@@ -356,7 +418,7 @@
       <a href="#proof">合作实绩</a>
       <a href="#contact">联系咨询</a>
     </nav>
-    <a href="#contact" class="cta-btn">Wholesale Inquiry</a>
+    <a href="#inquiry" class="cta-btn">Wholesale Inquiry</a>
     <div class="navToggle"><span></span><span></span><span></span></div>
   </div>
 </header>
@@ -380,7 +442,7 @@
       </div>
       <div class="hero-ctas">
         <a href="#brands" class="btn-solid">View Brand Family</a>
-        <a href="#contact" class="btn-ghost">Request Wholesale Catalog</a>
+        <a href="#inquiry" class="btn-ghost">Request Wholesale Catalog</a>
       </div>
     </div>
     <div class="hero-img">
@@ -545,13 +607,92 @@
   </div>
 </section>
 
+<section class="inquiry" id="inquiry">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Wholesale Inquiry · 批发询盘</span>
+      <h2 class="h2">Start a Wholesale Inquiry<span class="zh2">开始批发询盘</span></h2>
+      <p class="lead">Tell us your market and target specification. Our team replies to every trade inquiry with a tailored quotation, MOQ and shipping lead-time — within one business day. <b>For the Greater China &amp; Southeast Asia distribution network only.</b><br>请告诉我们您所在的市场与目标规格。每个贸易询盘我们都会回复一份定制报价、最小起订量与交期（一个工作日内）。<b>仅面向大中华及东南亚经销网络。</b></p>
+    </div>
+
+    <form class="inq-form" id="inqForm" novalidate>
+      <div class="inq-field">
+        <label for="inqCompany">Company<span class="req">*</span></label>
+        <input type="text" id="inqCompany" name="company" required autocomplete="organization" placeholder="Registered trading entity">
+      </div>
+      <div class="inq-field">
+        <label for="inqContact">Contact person<span class="req">*</span></label>
+        <input type="text" id="inqContact" name="contact" required autocomplete="name" placeholder="Full name">
+      </div>
+
+      <div class="inq-field">
+        <label for="inqEmail">Business e-mail<span class="req">*</span></label>
+        <input type="email" id="inqEmail" name="email" required autocomplete="email" placeholder="name@company.com">
+      </div>
+      <div class="inq-field">
+        <label for="inqPhone">Phone / WhatsApp</label>
+        <input type="tel" id="inqPhone" name="phone" autocomplete="tel" placeholder="+852 …">
+      </div>
+
+      <div class="inq-field">
+        <label for="inqMarket">Distribution market<span class="req">*</span></label>
+        <select id="inqMarket" name="market" required>
+          <option value="" selected disabled>Select your market…</option>
+          <option>China — Mainland</option>
+          <option>Hong Kong</option>
+          <option>Macao</option>
+          <option>Southeast Asia</option>
+          <option>Other (specify below)</option>
+        </select>
+      </div>
+      <div class="inq-field">
+        <label for="inqQty">Indicative quantity / order</label>
+        <select id="inqQty" name="quantity">
+          <option value="" selected>Indicative order size</option>
+          <option>Sample set only</option>
+          <option>1 – 10 cartons</option>
+          <option>10 – 50 cartons</option>
+          <option>50 – 200 cartons</option>
+          <option>200+ cartons / standing program</option>
+        </select>
+      </div>
+
+      <div class="inq-field col2">
+        <label for="inqSpec">Specification of interest</label>
+        <input type="text" id="inqSpec" name="spec" placeholder="e.g. MUESTRA TORO 6×52 HABANO · 1,000 units · Habano wrapper · private-label box">
+        <span class="hint">Vitola, wrapper origin, blend profile and box branding are all <b>available to order</b> — describe what your customer asks for.</span>
+      </div>
+
+      <div class="inq-field col2">
+        <label for="inqMsg">Anything else</label>
+        <textarea id="inqMsg" name="message" maxlength="800" placeholder="Delivery terms, target pricing, payment preference (TT / L/C / terms), timeline… (max 800 characters)"></textarea>
+      </div>
+
+      <div class="inq-field col2 inq-check">
+        <input type="checkbox" id="inqTerms" name="terms" required>
+        <label for="inqTerms">
+          I am a trade buyer or authorized distributor; Rivera Cigars are for onward distribution.
+          <span class="zh-lbl">我是贸易买家或授权经销商；Rivera 雪茄用于转售分销。</span>
+        </label>
+      </div>
+
+      <div class="inq-actions">
+        <button type="submit" class="inq-submit" id="inqSubmit">Send Inquiry</button>
+        <span class="inq-note">Replies to <b>info@alliedglory.com.hk</b> · Trade inquiries only · No payment on this page</span>
+      </div>
+
+      <div class="inq-status" id="inqStatus"></div>
+    </form>
+  </div>
+</section>
+
 <footer id="contact">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand reveal">
         <div class="name">ALLIED GLORY</div>
         <p>Allied Glory Technology Limited — Hong Kong-registered trading house and authorized Greater China &amp; Southeast Asia distributor for Rivera Cigars, Estelí, Nicaragua.</p>
-        <a href="mailto:info@alliedglory.com.hk?subject=Wholesale%20Inquiry" class="btn-solid foot-cta">Start a Wholesale Inquiry</a>
+        <a href="#inquiry" class="btn-solid foot-cta">Start a Wholesale Inquiry</a>
       </div>
       <div class="foot-col reveal">
         <h4>Company</h4>
@@ -589,6 +730,49 @@
       const open = linksEl.style.display === 'flex';
       linksEl.style.display = open ? 'none' : 'flex';
       linksEl.style.cssText += open ? '' : 'position:absolute; top:78px; left:0; right:0; background:#0C0A08; flex-direction:column; padding:24px 24px; gap:20px; border-bottom:1px solid rgba(198,165,82,.28);';
+    });
+  }
+
+  /* ---------- wholesale inquiry: open a pre-filled mailto to info@alliedglory.com.hk ---------- */
+  const inqForm = document.getElementById('inqForm');
+  const inqStatus = document.getElementById('inqStatus');
+  const INQ_MAILTO = 'info@alliedglory.com.hk';
+
+  if(inqForm){
+    inqForm.addEventListener('submit', (ev)=>{
+      ev.preventDefault();
+      if(!inqForm.reportValidity()){ inqStatus.className='inq-status'; inqStatus.textContent='Please complete the required fields.'; inqStatus.style.display='block'; return; }
+
+      const v = n => (document.querySelector('[name="'+n+'"]').value || '').trim();
+      const lines = [
+        'NEW WHOLESALE INQUIRY — Rivera Cigars',
+        '========================================',
+        '',
+        'Company            : ' + v('company'),
+        'Contact person     : ' + v('contact'),
+        'Business e-mail    : ' + v('email'),
+        'Phone / WhatsApp   : ' + (v('phone') || '—'),
+        'Distribution market: ' + v('market'),
+        'Indicative qty     : ' + (v('quantity') || '—'),
+        'Specification      : ' + (v('spec') || '—'),
+        'Other / notes      : ' + (v('message') || '—'),
+        'Trade-buyer check  : ' + (document.getElementById('inqTerms').checked ? 'yes' : 'no'),
+        '',
+        'Submitted from: alliedglory.com.hk/cigars.html'
+      ].join('\n');
+
+      const subject = encodeURIComponent('Wholesale Inquiry — ' + v('company') + ' (' + v('market') + ')');
+      const body = encodeURIComponent(lines);
+      const href = 'mailto:' + INQ_MAILTO + '?subject=' + subject + '&body=' + body;
+
+      const a = document.createElement('a');
+      a.href = href;
+      a.click();
+
+      inqStatus.className = 'inq-status ok';
+      inqStatus.style.display = 'block';
+      inqStatus.innerHTML = '<b>Inquiry ready — your e-mail client should open with the full message addressed to ' + INQ_MAILTO + '.</b><br>Complete the send from there. If nothing opens, write directly to ' + INQ_MAILTO + ' with the same details, or edit the form and click Send Inquiry again.';
+      inqStatus.scrollIntoView({behavior:'smooth', block:'center'});
     });
   }
 </script>
